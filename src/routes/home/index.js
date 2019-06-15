@@ -1,13 +1,11 @@
 import { h, Component } from 'preact';
-import style from './style';
+import { Items } from '../../containers/items'
+import { CardGrid } from '../../components/cardgrid'
 
 export default class Home extends Component {
 	render() {
 		return (
-			<div class={style.home}>
-				<h1>Home</h1>
-				<p>This is the Home component.</p>
-			</div>
+			<CardGrid images={[1, 2, 3, 4]}/>
 		);
 	}
 }
