@@ -6,7 +6,7 @@ export const CardGrid = ({images}) => (
         {images.map((c, i) => {
             return (
                 <Col xs={24} sm={12} lg={6}>
-                    <ArtCard title={`Nude#${i}`} price={0.0003} key={i} />
+                    <ArtCard title={`Nude#${c.id}`} price={0.0003} key={c.id} url={c.url} />
                 </Col>
             )
         })}

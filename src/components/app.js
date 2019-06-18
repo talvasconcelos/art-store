@@ -29,7 +29,7 @@ export default class App extends Component {
 					style={{ height: 48 }}
 				/>
 				</Header>
-				<Content style={{ padding: "0 30px", marginTop: 64, marginBottom: 64, height: "100%" }}>
+				<Content style={{ padding: "0 30px", margin: '64px auto', height: "100%", maxWidth: '960px' }}>
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
 						<Profile path="/profile/" id="0" />

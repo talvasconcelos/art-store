@@ -3,13 +3,13 @@ import { Link } from 'preact-router/match'
 
 const { Meta } = Card
 
-export const ArtCard = ({ title, price }) => (
+export const ArtCard = ({ title, price, url }) => (
     <Card
         style={{marginBottom: 16}}
         cover={
-        <img
+        <img style={{maxWidth: '128px', margin: '32px auto'}}
             alt="example"
-            src="https://picsum.photos/512"
+            src={url}
         />
         }
         actions={[

@@ -1,8 +1,19 @@
 import { h, Component } from 'preact';
 import { Row, Col, Icon, Card } from "antd"
+import { productData } from '../../data.js'
 
 export default class Profile extends Component {
-	render({ id }, { time, count }) {
+	state = {
+		product: {}
+	}
+
+	componentDidMount() {
+		this.setState({
+			product: productData.find(e => e.id === +this.props.id)
+		})
+	}
+
+	render({}, {product}) {
 		return (
 			<Row gutter={16}>
 				<Col md={16}>
@@ -10,7 +21,7 @@ export default class Profile extends Component {
 						cover={
 						<img
 							alt="example"
-							src="https://picsum.photos/400"
+							src={product.url}
 						/>
 						}>
 					</Card>
