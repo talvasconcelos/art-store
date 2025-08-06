@@ -17,10 +17,10 @@
     "extends": "eslint-config-synacor"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^9.32.0",
     "eslint-config-synacor": "^3.0.4",
     "if-env": "^1.0.4",
-    "preact-cli": "^2.2.1"
+    "preact-cli": "^3.5.1"
   },
   "dependencies": {
     "antd": "^3.18.2",
